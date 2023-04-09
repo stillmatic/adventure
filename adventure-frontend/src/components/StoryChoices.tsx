@@ -1,5 +1,6 @@
 import React from 'react';
 import { Choice, Story } from '../types/Story';
+import { Button, Flex, Spacer, Stack } from '@chakra-ui/react';
 
 interface StoryChoicesProps {
     story: Story;
@@ -10,14 +11,22 @@ interface StoryChoicesProps {
 const StoryChoices: React.FC<StoryChoicesProps> = ({ story, choices, onChoice }) => {
     return (
         <div>
-            {choices.map((choice) => {
-                const choiceNode = story.tree.find((node) => node.id === choice.id);
-                return (
-                    <button key={choice.id} onClick={() => onChoice(choice.id)}>
-                        {choiceNode.title}
-                    </button>
-                );
-            })}
+            <Stack
+                direction="row"
+                p={8}
+            >
+                {choices.map((choice) => {
+                    const choiceNode = story.tree.find((node) => node.id === choice.id);
+                    return (
+                        <>
+                            <Button key={choice.id} onClick={() => onChoice(choice.id)}>
+                                {choiceNode?.title}
+                            </Button>
+                        </>
+
+                    );
+                })}
+            </Stack>
         </div>
     );
 };

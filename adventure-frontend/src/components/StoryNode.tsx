@@ -1,5 +1,6 @@
 import React from 'react';
 import { Node } from '../types/Story';
+import { Heading } from '@chakra-ui/react';
 
 interface StoryNodeProps {
     node: Node;
@@ -8,7 +9,7 @@ interface StoryNodeProps {
 const StoryNode: React.FC<StoryNodeProps> = ({ node }) => {
     return (
         <div>
-            <h1>{node.title}</h1>
+            <Heading>{node.title}</Heading>
             <p>{node.description}</p>
         </div>
     );

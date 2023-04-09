@@ -4,6 +4,7 @@ import StoryNode from '../../components/StoryNode';
 import StoryChoices from '../../components/StoryChoices';
 import GameOver from '../../components/GameOver';
 import { Story, Node } from '../../types/Story';
+import { Box } from '@chakra-ui/react';
 
 const GamePage = () => {
     const router = useRouter();
@@ -33,17 +34,28 @@ const GamePage = () => {
 
     return (
         <div>
-            {story && node ? (
-                <>
-                    <StoryNode node={node} />
-                    <StoryChoices story={story} choices={node?.choices} onChoice={handleChoice} />
-                </>
-            ) : (
-                <p>Loading...</p>
-            )}
-            {story && node && node.choices.length === 0 ? (
-                <GameOver onStartOver={startOver} />
-            ) : null}
+            <Box
+                // bg="gray.800"
+                // color="white"
+                w="50%"
+                p={8}
+                boxShadow="lg"
+                mx="auto"
+                my={20}
+            >
+                {story && node ? (
+                    <>
+                        <StoryNode node={node} />
+                        <StoryChoices story={story} choices={node?.choices} onChoice={handleChoice} />
+                    </>
+                ) : (
+                    <p>Loading...</p>
+                )}
+                {story && node && node.choices.length === 0 ? (
+                    <GameOver onStartOver={startOver} />
+                ) : null}
+            </Box>
+
         </div >
     );
 };

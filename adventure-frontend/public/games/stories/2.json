@@ -1,0 +1,127 @@
+{
+    "title": "Crash Landing on Planet Xyron",
+    "description": "You are an astronaut on a solo mission to explore the far reaches of the galaxy. However, your spacecraft malfunctions and crash-lands on an uncharted alien planet. Your goal is to survive and find a way to communicate with Earth for rescue. What will you do?",
+    "story_id": "2",
+    "tree": [
+        {
+            "id": "1",
+            "title": "The Crash",
+            "description": "You regain consciousness after the crash. The cockpit is dark, and the control panel is flickering. You feel a sharp pain in your leg, but you can move. The emergency hatch is within reach.",
+            "choices": [
+                {
+                    "id": "2"
+                },
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Stay in the Cockpit",
+            "description": "You decide to stay in the cockpit and try to fix the communication system. You manage to send a distress signal, but there is no immediate response. You hear strange noises outside the spacecraft.",
+            "choices": [
+                {
+                    "id": "4"
+                },
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Exit the Spacecraft",
+            "description": "You open the emergency hatch and exit the spacecraft. You find yourself in a strange alien landscape with bizarre plants and rock formations. The air is breathable, but you feel uneasy.",
+            "choices": [
+                {
+                    "id": "6"
+                },
+                {
+                    "id": "7"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Investigate the Noises",
+            "description": "You cautiously open the hatch to investigate the strange noises. You are greeted by a group of friendly aliens who offer to help you repair your spacecraft. They take you to their village, where you learn about their culture and technology.",
+            "choices": [
+                {
+                    "id": "8"
+                },
+                {
+                    "id": "9"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Wait for Rescue",
+            "description": "You decide to stay in the cockpit and wait for rescue. Hours pass, and you start to feel weak and dehydrated. Suddenly, you hear a loud noise, and the spacecraft is lifted into the air. You have been rescued by a passing spaceship!",
+            "choices": []
+        },
+        {
+            "id": "6",
+            "title": "Explore the Landscape",
+            "description": "You decide to explore the alien landscape. As you walk, you encounter a variety of strange creatures and plants. Eventually, you come across an ancient alien temple with a mysterious glowing artifact inside.",
+            "choices": [
+                {
+                    "id": "10"
+                },
+                {
+                    "id": "11"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Return to the Spacecraft",
+            "description": "You decide to return to the safety of your spacecraft. As you approach, you notice that the communication system is now functional. You establish contact with Earth and await rescue. In the meantime, you document your findings on the alien planet.",
+            "choices": []
+        },
+        {
+            "id": "8",
+            "title": "Accept the Aliens' Help",
+            "description": "You accept the aliens\\' offer to help repair your spacecraft. With their advanced technology, they quickly fix the damage. You thank them and prepare to return to Earth, taking with you valuable knowledge about this alien civilization.",
+            "choices": []
+        },
+        {
+            "id": "9",
+            "title": "Decline the Aliens Help",
+            "description": "You politely decline the aliens offer to help repair your spacecraft. You decide to stay on the planet and learn more about their culture. Over time, you become a respected member of their society and live out the rest of your days in peace.",
+            "choices": []
+        },
+        {
+            "id": "10",
+            "title": "Investigate the Artifact",
+            "description": "You approach the glowing artifact with curiosity. As you touch it, you are instantly teleported to a different part of the galaxy. You find yourself aboard a highly advanced spaceship, where you are greeted by a benevolent alien race. They offer to take you back to Earth.",
+            "choices": [
+                {
+                    "id": "12"
+                },
+                {
+                    "id": "13"
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "title": "Leave the Temple",
+            "description": "You decide not to disturb the artifact and leave the temple. As you make your way back to your spacecraft, you encounter a group of aliens who offer to help you repair your ship. Grateful, you accept their assistance and prepare for your journey home.",
+            "choices": []
+        },
+        {
+            "id": "12",
+            "title": "Accept the Offer",
+            "description": "You accept the offer to return to Earth. The aliens take you on a journey through the stars, showing you wonders beyond your imagination. You arrive safely on Earth and share your incredible story with the world.",
+            "choices": []
+        },
+        {
+            "id": "13",
+            "title": "Decline the Offer",
+            "description": "You decline the offer to return to Earth, choosing instead to explore the galaxy with your new alien friends. You embark on a grand adventure, visiting distant planets and making incredible discoveries. Your journey becomes the stuff of legend.",
+            "choices": []
+        }
+    ]
+}

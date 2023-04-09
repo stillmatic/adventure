@@ -1,0 +1,51 @@
+{
+    "title": "The Mayan Treasure",
+    "description": "A thrilling adventure where the protagonist searches an ancient Mayan tomb for treasure.",
+    "story_id": "1",
+    "tree": [
+        {
+            "id": "1",
+            "title": "The Entrance",
+            "description": "You stand before the entrance of an ancient Mayan tomb. The air is heavy with the scent of history and danger. You can either enter the tomb or walk away.",
+            "choices": [
+                {
+                    "id": "2"
+                },
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Entering the Tomb",
+            "description": "You step inside the tomb, and the darkness surrounds you. The air is stale and cold. As you move forward, you notice two paths: one going left, and the other going right.",
+            "choices": [
+                {
+                    "id": "4"
+                },
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Walking Away",
+            "description": "You decide that the risk is too great, and you walk away from the tomb. The treasure remains undiscovered, and the secrets of the tomb are left untouched.",
+            "choices": []
+        },
+        {
+            "id": "4",
+            "title": "Left Path",
+            "description": "You take the left path, which leads you to a small chamber filled with ancient artifacts. Among them, you find a priceless Mayan artifact. You take it and exit the tomb, victorious in your discovery.",
+            "choices": []
+        },
+        {
+            "id": "5",
+            "title": "Right Path",
+            "description": "You take the right path, which leads you to a large chamber with a deadly trap. Before you can react, the trap is triggered, and the tomb becomes your final resting place.",
+            "choices": []
+        }
+    ]
+}

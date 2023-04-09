@@ -1,10 +1,15 @@
 import React from 'react';
+import { Node } from '../types/Story';
 
-const StoryNode = ({ node }) => {
+interface StoryNodeProps {
+    node: Node;
+}
+
+const StoryNode: React.FC<StoryNodeProps> = ({ node }) => {
     return (
         <div>
             <h1>{node.title}</h1>
-            <p>{node.text}</p>
+            <p>{node.description}</p>
         </div>
     );
 };

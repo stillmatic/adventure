@@ -1,32 +1,30 @@
 import { useEffect, useState } from 'react';
-import StoryNode from '../components/StoryNode';
-import StoryChoices from '../components/StoryChoices';
+import Link from 'next/link';
+import { Game } from '../types/Story.d';
 
 const Index = () => {
-  const [story, setStory] = useState(null);
-  const [node, setNode] = useState(null);
+  const [games, setGames] = useState([] as Game[]);
 
   useEffect(() => {
-    fetch('/api/story')
+    fetch('/api/games')
       .then((response) => response.json())
       .then((data) => {
-        setStory(data);
-        setNode(data.startNode);
+        setGames(data);
       });
   }, []);
 
-  const handleChoice = (nextNodeId: string) => {
-    setNode(story.nodes[nextNodeId]);
-  };
-
   return (
     <div>
-      {node && (
-        <>
-          <StoryNode node={node} />
-          <StoryChoices choices={node.choices} onChoice={handleChoice} />
-        </>
-      )}
+      <h1>Select a Game</h1>
+      <ul>
+        {games.map((game) => (
+          <li key={game.id}>
+            <Link href={`/games/${game.id}`}>
+              {game.title} - {game.description}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
